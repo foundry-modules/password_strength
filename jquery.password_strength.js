@@ -15,6 +15,7 @@
  * NOTE: This script requires jQuery to work.  Download jQuery at www.jquery.com
  *
  */
+jQuery	= $;
 
 (function($){
 
