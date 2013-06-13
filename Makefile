@@ -1,12 +1,7 @@
+all: modularize-script minify-script
+
 include ../../build/modules.mk
 
-
 MODULE = passwordstrength
-FILENAME = jquery.password_strength
-SOURCE = ${FILENAME}.js
-PRODUCTION = ${PRODUCTION_DIR}/passwordstrength.js
-DEVELOPMENT = ${DEVELOPMENT_DIR}/passwordstrength.js
-
-all:
-	${MODULARIZE} -n "${MODULE}" ${SOURCE} > ${DEVELOPMENT}
-	${UGLIFYJS} ${DEVELOPMENT} > ${PRODUCTION}
+SOURCE_SCRIPT_FILE_NAME = password_strength
+SOURCE_SCRIPT_FOLDER = .
